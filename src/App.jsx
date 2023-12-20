@@ -15,12 +15,14 @@ function App() {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormValues({ ...formValues, [name]: value });
+        console.log(formValues);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormErrors(validate(formValues));
         setIsSubmit(true);
+        console.log(formErrors);
     };
 
     useEffect(() => {
@@ -121,7 +123,7 @@ function App() {
                 <div className="text">
                     Already have an account? <span>Login</span>
                 </div>
-            </div>{" "}
+            </div>
         </>
     );
 }

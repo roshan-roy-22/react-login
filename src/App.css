@@ -2,11 +2,11 @@
   box-sizing: border-box;
 }
 body {
-  background: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
+  background: linear-gradient(to bottom, #57cc99, #fdfffc);
 }
 
 .container {
@@ -19,14 +19,17 @@ body {
   max-width: 500px;
   width: 100%;
   margin: auto;
+  
 }
 
 .container > form {
   width: 70%;
   border: 1px solid #dfdfdf;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #fff;
+  box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  
 }
 
 input {
